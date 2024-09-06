@@ -1,0 +1,31 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "C/C++: g++ 建置使用中檔案 [OpenCV]",
+			"command": "/usr/bin/g++",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-g",
+				"${file}",
+				"-I",
+				"/usr/local/include/opencv4",
+				"-o",
+				"${fileDirname}/${fileBasenameNoExtension}",
+				"-L","/usr/local/lib",
+				"-l","opencv_core",
+				"-l","opencv_highgui",
+				"-l","opencv_imgcodecs"
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "編譯器: /usr/bin/g++"
+		}
+	]
+}
