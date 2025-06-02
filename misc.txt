@@ -1,5 +1,7 @@
 my desktop env link
 
 <myvenv01.desktop>
-內容：
+內容： 以下不帶 .bashrc的環境
 Exec=gnome-terminal --working-directory=$HOME/myvenv01 -- bash -ic "source $HOME/myvenv01/bin/activate; exec bash --norc"
+以下是帶 .bashrc的環境
+Exec=gnome-terminal --working-directory=$HOME/myvenv01 -- bash -ic "source $HOME/myvenv01/bin/activate; exec bash"
