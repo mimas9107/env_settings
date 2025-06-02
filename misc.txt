@@ -1,0 +1,5 @@
+my desktop env link
+
+<myvenv01.desktop>
+內容：
+Exec=gnome-terminal --working-directory=$HOME/myvenv01 -- bash -ic "source $HOME/myvenv01/bin/activate; exec bash --norc"
